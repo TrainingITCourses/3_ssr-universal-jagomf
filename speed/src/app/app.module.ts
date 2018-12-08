@@ -19,7 +19,7 @@ import { MissionsViewerComponent } from './missions-viewer/missions-viewer.compo
   ],
   imports: [
     HttpClientModule,
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     FormsModule,
     AppRoutingModule
   ],
